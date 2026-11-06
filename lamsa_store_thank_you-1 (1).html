@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123d31">
+  <title>شكراً لاختيارك لمسة ستور</title>
+  <style>
+    :root {
+      --green: #123d31;
+      --green2: #1b5946;
+      --cream: #f7f8f4;
+      --white: #ffffff;
+      --gold: #d9bd7b;
+      --ink: #18352c;
+      --muted: #718078;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px 16px;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #e6eee8 0, #f5f7f3 48%, #e8eee9 100%);
+      color: var(--ink);
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .page {
+      width: min(100%, 430px);
+      overflow: hidden;
+      background: var(--white);
+      border-radius: 26px;
+      box-shadow: 0 22px 65px rgba(18,61,49,.16);
+      border: 1px solid rgba(18,61,49,.08);
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 38px 24px 34px;
+      color: var(--white);
+      background: linear-gradient(145deg, var(--green), var(--green2));
+    }
+    .hero:before, .hero:after {
+      content: "✦";
+      position: absolute;
+      color: rgba(217,189,123,.55);
+      font-size: 25px;
+    }
+    .hero:before { top: 23px; right: 28px; }
+    .hero:after { bottom: 24px; left: 30px; }
+    .logo {
+      width: 74px; height: 74px;
+      margin: 0 auto 14px;
+      display: grid; place-items: center;
+      border: 1px solid rgba(217,189,123,.8);
+      border-radius: 50%;
+      color: var(--gold);
+      font-size: 31px;
+      font-weight: bold;
+      background: rgba(255,255,255,.06);
+    }
+    .brand-en {
+      margin: 0;
+      color: #e7d5a9;
+      font-size: 12px;
+      letter-spacing: 3px;
+      direction: ltr;
+    }
+    .brand-ar {
+      margin: 7px 0 0;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .hero-line {
+      width: 54px; height: 2px;
+      margin: 20px auto 0;
+      background: var(--gold);
+      border-radius: 5px;
+    }
+    .content { padding: 30px 25px 28px; text-align: center; }
+    .heart { color: #bd8d64; font-size: 25px; }
+    h1 { margin: 8px 0 12px; font-size: 25px; color: var(--green); }
+    .message {
+      margin: 0 auto;
+      max-width: 310px;
+      color: #64736b;
+      line-height: 1.9;
+      font-size: 15px;
+    }
+    .offer {
+      margin: 25px 0 18px;
+      padding: 22px 16px;
+      border: 1px dashed #b6c8bd;
+      border-radius: 18px;
+      background: #f5f8f4;
+    }
+    .offer-label { color: var(--green2); font-size: 14px; font-weight: 700; }
+    .percent {
+      margin: 5px 0 3px;
+      color: var(--green);
+      font-size: 54px;
+      line-height: 1.1;
+      font-weight: 800;
+      direction: ltr;
+    }
+    .percent small { font-size: 25px; }
+    .offer-note { margin: 7px 0 0; color: var(--muted); font-size: 13px; }
+    .coupon-title { margin: 20px 0 9px; font-size: 13px; color: #64736b; }
+    .coupon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 11px 12px;
+      border: 1px solid #dce5de;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .coupon-code {
+      direction: ltr;
+      font: 800 18px Arial, sans-serif;
+      letter-spacing: 2px;
+      color: var(--green);
+    }
+    button {
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--green);
+      font: 700 13px Tahoma, Arial, sans-serif;
+      cursor: pointer;
+    }
+    button:active { transform: scale(.98); }
+    .copied { min-height: 19px; margin: 8px 0 0; color: var(--green2); font-size: 12px; }
+    .facebook {
+      display: block;
+      margin-top: 18px;
+      padding: 15px 18px;
+      border-radius: 12px;
+      color: #fff;
+      background: var(--green2);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background .2s;
+    }
+    .facebook:hover { background: var(--green); }
+    .footer {
+      padding: 17px 20px 20px;
+      text-align: center;
+      color: #8a9890;
+      background: #fafbf9;
+      border-top: 1px solid #edf1ed;
+      font-size: 11px;
+    }
+    .footer strong { color: var(--green); }
+    @media (max-width: 360px) {
+      .content { padding-inline: 18px; }
+      h1 { font-size: 22px; }
+      .percent { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="logo">ل</div>
+      <p class="brand-en">LAMSA STORE</p>
+      <p class="brand-ar">لمسة ستور</p>
+      <div class="hero-line"></div>
+    </header>
+
+    <section class="content">
+      <div class="heart">♡</div>
+      <h1>شكراً من القلب!</h1>
+      <p class="message">
+        شكراً لأنك اخترت لمسة ستور وثقت فينا.
+        نتمنى تكون طلبيتك عجبتك، وسعداء إنك جزء من عيلتنا.
+        وجودك ودعمك يعني لنا الكثير 💚
+      </p>
+
+      <div class="offer">
+        <div class="offer-label">هدية بسيطة منّا ليك في طلبك القادم</div>
+        <div class="percent">20<small>%</small></div>
+        <div class="offer-label">خصم خاص على طلبك القادم</div>
+        <p class="offer-note">استخدم كود الخصم التالي عند التواصل معنا</p>
+        <div class="coupon-title">كود الخصم الخاص بك</div>
+        <div class="coupon">
+          <span class="coupon-code" id="coupon">LAMSA20</span>
+          <button type="button" onclick="copyCoupon()">انسخ الكود</button>
+        </div>
+        <p class="copied" id="copied" aria-live="polite"></p>
+      </div>
+
+      <a class="facebook" href="https://www.facebook.com/share/1DD6QBBvnZ/" target="_blank" rel="noopener noreferrer">
+        تواصل معانا على فيسبوك
+      </a>
+    </section>
+
+    <footer class="footer">
+      بكل حب، <strong>فريق لمسة ستور</strong><br>
+      شكراً لأنك جزء من حكايتنا 💚
+    </footer>
+  </main>
+  <script>
+    function copyCoupon() {
+      const code = document.getElementById('coupon').textContent;
+      const status = document.getElementById('copied');
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(code).then(() => {
+          status.textContent = 'تم نسخ كود الخصم بنجاح ✓';
+        }).catch(() => { status.textContent = 'الكود: ' + code; });
+      } else {
+        status.textContent = 'كود الخصم: ' + code;
+      }
+    }
+  </script>
+</body>
+</html>
